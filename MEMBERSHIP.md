@@ -25,7 +25,7 @@ This primitive is a member of the Document Editor primitive family. It is the **
 
 ## Ripple-Analysis Checklist Before Modifying Public API
 
-1. **Typography type shape changes are HIGH-RIPPLE** — affects 4+ family primitives. Consult [dependency audit §5](../docs/plans/2026-04-19-document-editor-dependency-audit.md).
+1. **Typography type shape changes are HIGH-RIPPLE** — affects 4+ family primitives. Consult [dependency audit §5](../RichTextEditorKit/docs/plans/2026-04-19-document-editor-dependency-audit.md).
 2. Changes to font-metric resolution: affects pagination layout + RichText composition. Test across DocumentPrimitive's composition path.
 3. Adding new typography fields: usually additive. Still document in the commit.
 4. Changes to OpenType feature model: affects any consumer that specifies glyph variants.
