@@ -5,8 +5,8 @@ import PackageDescription
 let package = Package(
     name: "TypographyPrimitive",
     platforms: [
-        .macOS(.v15),
-        .iOS(.v17),
+        .macOS(.v14),
+        .iOS(.v15),
     ],
     products: [
         .library(name: "TypographyPrimitive", targets: ["TypographyPrimitive"]),
