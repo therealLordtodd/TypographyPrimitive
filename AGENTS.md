@@ -3,6 +3,10 @@
 ## Purpose
 TypographyPrimitive centralizes typeface descriptions, OpenType feature settings, composition rules, and platform font resolution for higher-level editor packages.
 
+## UI Posture
+
+No UI surface — typography model plus platform font resolution, no `SwiftUI` imports or `View` definitions. Theme & HIG vector scores N/A: this primitive is consumed by theme tokens at higher layers, it does not render UI itself. Reviewed 2026-04-29 (Theme & HIG audit round 1).
+
 ## Key Directories
 - `Sources/TypographyPrimitive`: Font descriptors, metrics, OpenType features, and `FontManager`.
 - `Tests/TypographyPrimitiveTests`: Model round-trip and font manager tests.
